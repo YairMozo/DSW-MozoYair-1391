@@ -10,28 +10,67 @@
     <title>Layout Css Grid</title>
 </head>
 <body>
-    <header>
-        <h1>Layout CSS Grid</h1>
-        <nav>
-            <ul class="nav-right-section">
-                <li>
-                    <a href="">Incio</a>
-                </li>
-                <li>
-                    <a href="">Audio</a>
-                </li>
-                <li class="">
-                    <a href="">Nosotros</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4">Fase 3 Diseño Web UNAD</span>
+        </a>
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Inicio</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Audios</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Nosotros</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Media Query</a></li>
+        </ul>
+      </header>
     
-    <main>
-        <section>
+        <main role="main">
+            
 
-        </section>
-    </main>
-    
+            
+            <div class="jumbotron">
+              <div class="container">
+                <h1 class="display-3">Layout Grid!</h1>
+                <p>CSS Grid Layout es un modelo de maquetación CSS en base a una rejilla, algo que podría no parecer tan novedoso, si tenemos en cuenta que diversas librerías de CSS lo habían intentado ya. Sistemas como 960 Grid System fueron pioneros en crear una base de código CSS para que los diseñadores pudieran posicionar los elementos en una distribución de filas y columnas. El propio Bootstrap incluye entre otras cosas un sistema de rejilla.</p>
+              </div>
+            </div>
+      
+      
+            <div class="container">
+              
+              <div class="row">
+                
+                <div class="col-md-4">
+                  <h2>Media Query</h2>
+                  <p>Las Media Queries se utilizan para obtener las características técnicas del dispositivo que solicita la visualización de la página web. Las obtiene solicitando al dispositivo las llamadas Media Features. De esta manera, es posible definir reglas de estilo para diferentes dimensiones de pantalla.</p>
+                  <p><a class="btn btn-secondary" href="#" role="button">Mas detalles »</a></p>
+                </div>
+                <div class="col-md-4">
+                  <h2>Audio</h2>
+                  <p>A continuacion encontraras un audio explicativo donde podras tener mas detalle de lo que son las media query.</p>
+                  <p><a class="btn btn-secondary" href="#" role="button">Mas detalles »</a></p>
+                </div>
+                <div class="col-md-4">
+                  <h2>Nosotros</h2>
+                  <p>En esta seccion podras encontrar mas detalles acerca de las personas que realizaron esta pagina.</p>
+                  <p><a class="btn btn-secondary" href="#" role="button">Mas detalles »</a></p>
+                </div>
+              </div>
+
+              
+      
+              <hr>
+      
+            </div> 
+      
+          </main>
+
+          <footer class="container">
+            <p>© Acerca de 2023- Yair Mozo</p>
+          </footer>
+        
+
+          <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+
 </body>
 </html>
