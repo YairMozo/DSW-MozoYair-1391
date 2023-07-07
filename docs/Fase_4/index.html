@@ -4,29 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Copamtible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <title>Cuestionario</title>
 </head>
-<body>
+
+<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="30"><use xlink:href="#bootstrap"></use></svg>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="/Fase_1/index.html" target="blank" class="nav-link active" aria-current="page">Fase 1</a></li>
+      <li class="nav-item"><a href="/Fase_2/index.html" target="blank" class="nav-link">Fase 2</a></li>
+      <li class="nav-item"><a href="/Fase_3/index.html" target="_blank" class="nav-link">Fase 3</a></li>
+    </ul>
+  </header>
+  
+<body style="margin: auto;">
     <h1 id="resultado">Responda las siguientes preguntas</h1>
     <div>
         <form name="formulario">
-            <h3>1.Lorem</h3>
-3
-            <input type="radio" name="r1" value="a"> a. link <br>
-            <input type="radio" name="r1" value="b"> b. scr <br>
-            <input type="radio" name="r1" value="c"> c. a <br>
+            <h3 >1.¿Cuál es la forma correcta de especificar una media query en CSS?</h3>
 
-            <h3>2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque ipsa possimus sit, debitis explicabo recusandae laborum veniam accusantium molestias architecto aspernatur iure, eligendi beatae quos totam cupiditate! Harum, voluptate incidunt!</h3>
+            <div>
+                <input type="radio" name="r1" value="a"> a. @query (min-width: 768px) { ... }  <br>
+                <input type="radio" name="r1" value="b"> b. @media (min-width: 768px) { ... } <br>
+                <input type="radio" name="r1" value="c"> c. @screen (min-width: 768px) { ... } <br>
+            </div>
 
-            <input type="radio" name="r2" value="a"> a. display <br>
-            <input type="radio" name="r2" value="b"> b. position <br>
-            <input type="radio" name="r2" value="c"> a. color <br>
 
-            <h3>3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ex reiciendis odio voluptas voluptatum eaque at eveniet saepe explicabo eum quasi atque unde, fugit consectetur veniam, vero, veritatis non placeat.</h3>
+            <h3 >2.¿Qué propiedad de las media queries se utiliza para adaptar el estilo según la orientación de un dispositivo?</h3>
 
-            <input type="radio" name="r3" value="a"> a. single <br>
-            <input type="radio" name="r3" value="b"> b. strong <br>
-            <input type="radio" name="r1" value="c"> c. important <br>
+            <div>
+                <input type="radio" name="r2" value="a"> a. width <br>
+                <input type="radio" name="r2" value="b"> b. device-width <br>
+                <input type="radio" name="r2" value="c"> c. orientation <br>
+            </div>
+            
+            <h3>3. ¿Cuál es la media query correcta para apuntar a dispositivos con una resolución máxima de 1024px?</h3>
+
+            <input type="radio" name="r3" value="a"> a. @media (min-resolution: 1024px) { ... } <br>
+            <input type="radio" name="r3" val33ue="b"> b. @media (max-width: 1024px) { ... } <br>
+            <input type="radio" name="r3" value="c"> c. @media (max-resolution: 1024px) { ... } <br>
+
+            <h3>4.¿Cuál es la sintaxis correcta para aplicar una media query solo a dispositivos móviles?</h3>
+
+            <input type="radio" name="r4" value="a"> a. @media (mobile) { ... } <br>
+            <input type="radio" name="r4" value="b"> b. @media (max-width: 480px) { ... } <br>
+            <input type="radio" name="r4" value="c"> c. @media (device: mobile) { ... } <br>
+
+            <h3>5.¿Cuál es el uso adecuado de las media queries para aplicar estilos a pantallas retina de alta resolución?</h3>
+
+            <input type="radio" name="r5" value="a"> a. @media (min-resolution: 2dppx) { ... } <br>
+            <input type="radio" name="r5" value="b"> b. @media (min-device-pixel-ratio: 2) { ... } <br>
+            <input type="radio" name="r5" value="c"> c. @media (min-width: 1920px) { ... } <br>
+            
 
          <input type="button" value="Enviar" onclick="procesarRespuestas()">
         </form>
